@@ -1,6 +1,6 @@
 # Podcast Transcription & Manipulation Engine
 
-Offline-first CLI that downloads a Spotify podcast episode, transcribes it locally with `whisper.cpp`, and produces a transcript, Markdown, a concise summary, and an X (Twitter) thread using a local Ollama model.
+Offline-first CLI that downloads a public audio link (e.g., YouTube), transcribes it locally with `whisper.cpp`, and produces a transcript, Markdown, a concise summary, and an X (Twitter) thread using a local Ollama model.
 
 ## Features
 - Single-command pipeline: download → transcribe → format → summarise → X thread
@@ -31,7 +31,7 @@ Update `.env` if paths differ:
 ## Usage
 Run from the repository root so the package resolves correctly:
 ```bash
-python -m podcast_engine.cli "<spotify_episode_url>"
+python -m podcast_engine.cli "<public_audio_url>"
 ```
 Outputs are written to:
 - `audio/<episode_id>.mp3`
@@ -50,6 +50,6 @@ Outputs are written to:
 
 ## Troubleshooting
 - Spotify episodes are usually DRM-protected and cannot be downloaded by yt-dlp; use a publicly accessible audio URL or podcast feed.
-- Download errors: confirm the URL is a valid Spotify episode and yt-dlp is up to date.
+- Download errors: confirm the URL is publicly accessible; DRM-protected sources (including many Spotify episodes) will not work.
 - Transcription errors: verify `WHISPER_CPP_BIN` and `WHISPER_MODEL_PATH` paths.
 - LLM errors: ensure Ollama is running and the configured model is pulled locally.
