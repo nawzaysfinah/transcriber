@@ -1,0 +1,5 @@
+You are writing a high-quality X (Twitter) thread.
+Create a compelling, insightful thread from the podcast transcript.
+Each tweet should be concise and engaging.
+Number the tweets.
+Do not include hashtags.

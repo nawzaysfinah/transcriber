@@ -1,0 +1,42 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.py.class
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# macOS noise
+.DS_Store
+
+# Editor/IDE
+.idea/
+.vscode/
+
+# Python tooling
+.mypy_cache/
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Build / dist
+build/
+dist/
+*.egg-info/
+
+# Audio and model artifacts
+podcast_engine/audio/
+podcast_engine/transcripts/*.mp3
+podcast_engine/transcripts/*.json
+podcast_engine/transcripts/*.md
+podcast_engine/outputs/
+models/
+
+# Local env
+podcast_engine/.env
