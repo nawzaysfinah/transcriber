@@ -37,6 +37,12 @@ podcast_engine/transcripts/*.json
 podcast_engine/transcripts/*.md
 podcast_engine/outputs/
 models/
+node_modules/
+podcast_engine/frontend/node_modules/
+podcast_engine/frontend/dist/
+podcast_engine/transcripts/debug_*
+*.wav
+.env.local
 
 # Local env
 podcast_engine/.env
